@@ -1,0 +1,70 @@
+body{
+	background: linear-gradient(to bottom left,#fdfbfb,#ebedee);
+	height: 1440px;
+	user-select: none; /*защита от выделения символов в браузере*/
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 столбца*/
+	grid-gap: 20px; /*растояние между ячейками*/
+	/*background-image: linear-gradient(210deg, #f5f7fa 0%, #c3cfe2 100%);*/
+	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+	padding: 20px;
+	border-radius: 5px;
+	max-width: 350px;
+	font-family: "Arial";
+	box-shadow: 0.4em 0.4em 25px rgba(122,122,122,0.5);
+}
+.item{
+	color:#000000;
+	padding: 20px;
+	display: flex; /*чтобы выровнять все содержимое по вертикали и горизонтали*/
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	cursor: pointer;
+	font-weight: bold; /*жирный шрифт*/
+	border-radius: 6px;
+	border-width: 1.1px; /* Толщина границы */
+    border-color: #000000; /* Цвет границы */
+	border-style: solid; /* Стиль границы */  
+}
+form{
+	max-width: 100%;
+}
+input{
+	width: 100%;
+	height: 60px;
+	border-radius: 5px;
+	font-size: 30px;
+	outline: none; /* не появляется граница при фокусе*/
+	text-align: right;
+}
+.input{
+	grid-column: 1/-1; /*растянется на всю ширину контейнера*/
+	padding: 20px;
+}
+.clean{
+	grid-column: 1/3;
+	background-color: #d8e7fc;
+	border-color: #d8e7fc; /* Цвет границы */
+}
+.back{
+	grid-column: 3/-1;
+}
+.equal{
+	grid-column: 4;
+	grid-row: 6/8;
+	background-color: #d8e7fc;
+	border-color: #d8e7fc; /* Цвет границы */
+}
+.zero {
+	/*grid-column: 1/3;*/
+}
+.item:hover {
+	background-color: #eea36d;
+	border-color: #eea36d;
+	box-shadow: 0.4em 0.4em 25px rgba(122,122,122,0.5);
+}
